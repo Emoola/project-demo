@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
+    <script type="text/javascript" language="javascript"src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/msal.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://rawgit.com/Microsoft/PowerBI-JavaScript/master/dist/powerbi.min.js"></script>
+
+    <title>PowerBI Service Embedded</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftContainer">
+            <p id="WelcomeMessage">Welcome to Power BI Embedded Wepage!</p>
+            <button id="SignIn" onclick="">Sign In</button>
+            <script type="text/javascript" language="javascript" src="auth-reportload.js"></script>
+        </div>
+        <div class="rightContainer">
+            <pre id="json"></pre>
+        </div>
+        <div id="report"></div>
+        <div id="dashboard"></div>
+        <div id="reportContainer" style="margin: 0 auto; width: 80%; height: 600px;"></div> 
+    </div>
+
+</body>
+</html>
